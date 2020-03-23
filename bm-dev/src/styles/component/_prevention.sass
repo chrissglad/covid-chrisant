@@ -1,0 +1,125 @@
+.prevention
+    header
+        padding: 5rem 0 2.5rem 0
+        text-align: center
+        h1
+            font-size: 1.825rem
+            padding-bottom: 20px
+        p
+            font-size: 1.125rem
+            line-height: 2rem
+            color: #718096
+            padding-bottom: 1.5rem
+    .showcase
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        div
+            padding: 1.5rem 0 2.5rem 0
+            width: 50%
+            color: white
+            h2, ul
+                width: 60% 
+            h2
+                margin: 20px 0
+            ul
+                li
+                    margin: 2.5rem 0 
+                    line-height: 1.5rem  
+                    &::first-letter
+                        text-transform: uppercase 
+
+            &.do
+                background: #2b8e70
+                padding-left: 1.5rem
+                padding-right: 1.5rem
+                h2,ul
+                    margin-left: 39%
+            &.dont
+                background: #c53030
+                padding-right: 1.5rem
+                padding-left: 1.5rem
+                text-align: right
+                h2, ul
+                    margin-right: 33.3333%
+.video
+    .container
+        .iframe
+            text-align: center
+            iframe
+                height: 650px
+                width: 100%
+
+@media screen and ( max-width: 895px )
+    .prevention
+        .container
+            width: 90%
+        .showcase
+            div
+                h2, ul
+                    width: 83% 
+
+                &.do
+                    h2,ul
+                        margin-left: 17%
+                &.dont
+                    h2, ul
+                        margin-right: 17%
+    .video
+        .container
+            .iframe
+                text-align: center
+                iframe
+                    height: 500px
+                    width: 100%
+
+@media screen and ( max-width: 770px )
+    .prevention
+        .container
+            width: 90%
+        .showcase
+            flex-direction: column
+            div
+                width: 100%
+                padding: 5%
+                h2, ul
+                    width: 100% 
+                ul
+                    li
+                        margin: 20px 0
+
+                &.do
+                    h2,ul
+                        margin-left: 0
+                &.dont
+                    h2, ul
+                        margin-right: 0
+
+@media screen and ( max-width: 700px )
+    .prevention
+        header
+            padding: 7rem 0 2.5rem 0
+
+@media screen and ( max-width: 550px )
+    .video
+        .container
+            width: 100%
+            header
+                padding: 20px 0
+            .iframe
+                text-align: center
+                iframe
+                    height: 330px
+                    width: 100%
+
+@media screen and ( max-width: 450px )
+    .video
+        .container
+            width: 100%
+            header
+                padding: 20px 0
+            .iframe
+                text-align: center
+                iframe
+                    height: 250px
+                    width: 100%
